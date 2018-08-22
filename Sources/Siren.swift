@@ -14,7 +14,7 @@ import UIKit
 public final class Siren: NSObject {
 
     /// Current installed version of your app.
-    internal var currentInstalledVersion: String? = {
+    public var currentInstalledVersion: String? = {
         return Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String
     }()
 
